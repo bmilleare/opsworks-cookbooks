@@ -8,7 +8,7 @@ template 'mongo.ini' do
   when 'centos','redhat','fedora','amazon'
     path "/etc/php.d/mongo.ini"
   when 'debian','ubuntu'
-    path "/etc/php5/conf.d/mongo.ini"
+    path "/etc/php5/apache2/conf.d/20-mongo.ini"
   end
   source 'mongo.ini.erb'
   owner 'root'
